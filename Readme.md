@@ -103,7 +103,7 @@ mySpeech support this list language :
 ```
 This is example for customization language :
 ```javascript
-mySpeech("#example").language("en-GB").on();
+mySpeech("#example").language("en-GB").onSpeak();
 ```
 
 #### Pitch & Rate
