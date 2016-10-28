@@ -1,6 +1,9 @@
 # mySPeech
 
-mySpeech is small library for make speech synthesis also speech synthesis(coming soon).
+mySpeech is small library for make speech synthesis also speech recognition(coming soon).
+
+## Demo
+For demo, click [here](http://hermawan.id/example/).
 
 ## Example Usage
 
@@ -128,4 +131,4 @@ mySpeech("p")
 ```
 
 ## License
-This plugin is available under the MIT license.
+This plugin is available under the [MIT License](https://opensource.org/licenses/MIT).
