@@ -93,6 +93,11 @@
   // Make references from mySpeech.init.prototype to mySpeech.prototype
   mySpeech.init.prototype = mySpeech.prototype;
 
-  // Set for global name
-  global.mySpeech = mySpeech;
+  if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+    // Set for module
+    module.exports = mySpeech;
+  } else {
+    // Set for global name in browser
+    global.mySpeech = mySpeech;
+  }
 }(window))
