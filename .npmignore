@@ -1,0 +1,6 @@
+.DS_Store
+node_modules
+example/
+.gitignore
+.git
+npm-debug.log

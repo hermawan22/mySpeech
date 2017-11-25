@@ -3,13 +3,25 @@
 mySpeech is small library for make speech synthesis also speech recognition(coming soon).
 
 ## Demo
-For demo, click [here](http://hermawan.id/example/).
+
+For demo, click [here](https://hermawan22.github.io/mySpeech/).
 
 ## Example Usage
 
-Download the library  [here](https://github.com/hermawan22/mySpeech/archive/master.zip).
+Download the library [here](https://github.com/hermawan22/mySpeech/archive/master.zip).
+
+Or if you use node, just install and import it :
+
+```javascript
+npm install --save myspeech;
+```
+
+```javascript
+import mySpeech from 'mySpeech';
+```
 
 This is example to using mySpeech :
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -38,8 +50,11 @@ This is example to using mySpeech :
 ```
 
 ### Customization
+
 #### Language
+
 mySpeech support this list language :
+
 ```
 'Afrikaans'         =>  'af-ZA'
 'Bahasa Indonesia'  =>  'id-ID'
@@ -104,31 +119,40 @@ mySpeech support this list language :
 '日本語'             =>  'ja-JP'
 'Lingua latīna'     =>  'la';
 ```
+
 This is example for customization language :
+
 ```javascript
-mySpeech("#example").language("en-GB").onSpeak();
+mySpeech('#example')
+  .language('en-GB')
+  .onSpeak();
 ```
 
 #### Pitch & Rate
-Pitch and rate is contain value **0 - 2**.  
+
+Pitch and rate is contain value **0 - 2**.\
 So, you can customize like this :
+
 ```javascript
-mySpeech("#example")
+mySpeech('#example')
   .pitch(1.2)
   .rate(0.8)
   .onSpeak();
 ```
 
 #### Event Click
-If you need to use mySpeech whit clicked event, just use **onClickSpeak()** mehod.  
+
+If you need to use mySpeech whit clicked event, just use **onClickSpeak()** mehod.\
 This is the example of code :
+
 ```javascript
-mySpeech("p")
-  .language("id-ID")
+mySpeech('p')
+  .language('id-ID')
   .pitch(1)
   .rate(1.3)
-  .onClickSpeak("p");
+  .onClickSpeak('p');
 ```
 
 ## License
+
 This plugin is available under the [MIT License](https://opensource.org/licenses/MIT).
