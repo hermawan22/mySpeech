@@ -17,7 +17,7 @@ npm install --save myspeech;
 ```
 
 ```javascript
-import mySpeech from 'mySpeech';
+import mySpeech from 'myspeech';
 ```
 
 This is example to using mySpeech :
