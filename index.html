@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Demo Example of mySpeech</title>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-  </head>
-  <body>
-    <div class="container" style="text-align: center; margin-top: 10%; font-size: 36px">
-      <div id="example">
-        Hello there, how are you today?
-      </div>
 
-      <br />
-      <a class="btn btn-success btn-lg" href="#" role="button">To answer, Click Here!</a>
-      <br />
+<head>
+  <meta charset="utf-8">
+  <title>Demo Example of mySpeech</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
 
-      <p>
-        I'm fine, thank you.
-      </p>
-    </input>
+<body>
+  <div class="container" style="text-align: center; margin-top: 10%; font-size: 36px">
+    <div id="example">
+      Hello there, how are you today?
     </div>
 
-    <script src="../src/mySpeech.js"></script>
-    <script>
-      // without event
-      mySpeech("#example")
-        .language("en-US")
-        .pitch(1)
-        .rate(1)
-        .onSpeak();
+    <br />
+    <a class="btn btn-success btn-lg" href="#" role="button">To answer, Click Here!</a>
+    <br />
 
-      // with click event
-      mySpeech("p")
-        .language("id-ID")
-        .pitch(1)
-        .rate(1.3)
-        .onClickSpeak("a");
+    <p>
+      I'm fine, thank you.
+    </p>
+    </input>
+  </div>
 
-    </script>
-  </body>
+  <script src="./mySpeech.js"></script>
+  <script>
+    // without event
+    mySpeech("#example")
+      .language("en-US")
+      .pitch(1)
+      .rate(1)
+      .onSpeak();
+
+    // with click event
+    mySpeech("p")
+      .language("id-ID")
+      .pitch(1)
+      .rate(1.3)
+      .onClickSpeak("a");
+
+  </script>
+</body>
+
 </html>
